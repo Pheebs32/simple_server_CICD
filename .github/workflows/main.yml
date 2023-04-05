@@ -26,6 +26,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pipenv
           pip install pytest
+          pip install flask
           pipenv install --dev
       
       # Now we run our tests
