@@ -7,6 +7,10 @@ app = Flask(__name__)
 def get_home():
     return "Hello, world!"
 
+@app.route('/hero', methods=['GET'])
+def get_hero():
+    return "I am a CI-CD hero!"
+
 if __name__ == '__main__':
     app.run(
         debug=True,
